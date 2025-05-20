@@ -1,0 +1,128 @@
+.header-layout1 {
+    width: 100%;
+    min-height: 420px;
+    height: auto;
+    background-image: url('./../../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fixed;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.header-layout2 {
+    width: 70%;
+    min-height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding-top: 40px;
+}
+
+.header-layout3 {
+    min-height: 250px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.header-text {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.header-layout4 {
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.add-job-button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.add-job-button:hover {
+    background-color: darkorange;
+}
+
+
+
+@media (max-width: 700px) {
+    .header-text {
+        font-size: 16px;
+    }
+
+    .add-job-button {
+        width: 30%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 475px) {
+    .header-text {
+        font-size: 14px;
+    }
+
+    .header-layout3 {
+        width: 100%;
+    }
+
+    .add-job-button {
+        width: 30%;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 422px) {
+    .header-layout1 {
+        padding-top: 50px;
+        min-height: 520px;
+    }
+
+    .add-job-button {
+        width: 30%;
+        font-size: 15px;
+    }
+}

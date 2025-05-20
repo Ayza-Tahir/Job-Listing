@@ -1,0 +1,11 @@
+.job-layout1 {
+    width: 100%;
+    min-height: 597.98px;
+    background:white;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
