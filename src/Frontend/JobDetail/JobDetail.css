@@ -1,0 +1,73 @@
+.job-detail-container {
+    width: 65%;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-top:150px;
+ }
+
+.back-btn {
+    background: #f7f8fa;
+    color: #333;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+    background-color: #ddd;
+}
+
+.job-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+}
+
+.job-info p {
+    margin: 8px 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.job-info strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.job-description {
+    margin-top: 30px;
+}
+
+.job-description h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+}
+
+.job-description p {
+    line-height: 1.6;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+@media (max-width:423px) {
+    .job-detail-container {
+           
+            margin-top: 250px;   }
+    
+}

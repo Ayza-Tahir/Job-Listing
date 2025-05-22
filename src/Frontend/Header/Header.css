@@ -53,6 +53,7 @@
     color: white;
     text-align: center;
     line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header-layout4 {
@@ -81,6 +82,7 @@
     align-items: center;
     text-align: center;
     transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 .add-job-button:hover {

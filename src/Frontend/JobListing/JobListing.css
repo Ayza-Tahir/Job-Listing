@@ -1,11 +1,241 @@
-.job-layout1 {
-    width: 100%;
-    min-height: 597.98px;
-    background:white;
-    position: relative;
-    box-sizing: border-box;
+.job-container {
+    display: flex;
+    gap: 2.5%;
+    padding: 2%;
+    flex-wrap: wrap;
+}
+
+.job-filters {
     display: flex;
     flex-direction: column;
+    gap: 25px;
+    width: 25%;
+    min-width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ccc;
+    padding: 2%;
+    max-height: 530px;
+    box-sizing: border-box;
+}
+
+.filter-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.apply-btn {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    /* margin-top: 5px; */
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+.job-layout1 {
+    flex-grow: 1;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px;
+    padding-top:4%;
+    padding-bottom: 4%;
+}
+
+
+.job-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    border: 1px solid #ccc;
+    padding: 2%;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-family: 'Open Sans', sans-serif;
+    min-height: 120px;
+    width: 80%;
+    box-sizing: border-box;
+    
+}
+
+
+.job-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 60%;
+    min-width: 200px;
+}
+
+.company {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.job-title-type {
+    display: flex;
+    gap: 15px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #333;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.location {
+    font-size: 0.9em;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.job-actions {
+    display: flex;
+    gap: 10px;
+    flex: 1 1 30%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    min-width: 180px;
+    margin-top: 10px;
+}
+
+.job-actions button {
+    height: 40px;
+    padding: 6px 15px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.open-btn {
+    background-color: #4caf50;
+}
+
+.open-btn:hover {
+    background-color: #3e8e41;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #b63125;
+}
+
+.pagination-top-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
+}
+
+
+.pagination-top-right button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.pagination-top-right button:hover:not(:disabled) {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination-top-right button:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.pagination-top-right .active-page {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+    cursor: default;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-yes,
+.btn-no {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-yes {
+    background-color: #d9534f;
+    color: white;
+}
+
+.btn-no {
+    background-color: #6c757d;
+    color: white;
 }

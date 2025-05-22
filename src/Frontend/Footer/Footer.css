@@ -54,6 +54,7 @@
 
 .footer-title {
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer-subtitle {
@@ -63,6 +64,7 @@
     color: #CCCCCC;
     text-decoration: none;
     white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer-layout4 {
@@ -91,6 +93,7 @@
     cursor: pointer;
     transition: color 0.3s ease;
     display: inline-block;
+    font-family: 'Poppins', sans-serif;
 }
 
 .social-icon:hover {
