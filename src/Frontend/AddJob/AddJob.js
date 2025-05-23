@@ -18,6 +18,7 @@ function AddJob() {
     const formData = {
       company_name: form.company_name.value.trim(),
       email: form.email.value.trim(),
+      apply_link: form.apply_link.value.trim(),
       city: form.city.value.trim(),
       country: form.country.value,
       address: form.address.value.trim(),
@@ -63,6 +64,10 @@ function AddJob() {
         <label>Email</label>
         <input name="email" type="email" placeholder="Enter contact email" required />
 
+        <label>Apply Link</label>
+        <input name="apply_link" type="url" placeholder="Enter Apply Link" />
+
+
         <label>City</label>
         <input name="city" type="text" placeholder="Enter city" required />
 
@@ -78,7 +83,7 @@ function AddJob() {
         </select>
 
         <label>Address</label>
-        <input name="address" type="text" placeholder="Enter full address" required />
+        <input name="address" type="text" placeholder="Enter full address" />
 
         <label>Job Title</label>
         <input name="job_title" type="text" placeholder="Enter job title" required />

@@ -15,6 +15,7 @@ def add_job():
     job = Job(
         company_name=data['company_name'],
         email=data['email'],
+        apply_link=data['apply_link'],
         city=data['city'],
         country=data['country'],
         address=data['address'],
@@ -31,20 +32,22 @@ def add_job():
 
 @jobs_bp.route('/jobs', methods=['GET'])
 def get_jobs():
-    jobs = Job.query.all()
+    jobs = Job.query.order_by(Job.posted_date.desc()).all()  
     jobs_list = [{
         'id': job.id,
         'company_name': job.company_name,
         'email': job.email,
+        'apply_link': job.apply_link,
         'city': job.city,
         'country': job.country,
         'address': job.address,
         'job_title': job.job_title,
         'job_type': job.job_type,
         'expected_salary': job.expected_salary,
-        'description': job.description
+        'description': job.description,
     } for job in jobs]
     return jsonify(jobs_list)
+
 
 
 @jobs_bp.route('/jobs/<int:job_id>', methods=['DELETE'])
@@ -58,7 +61,6 @@ def delete_job(job_id):
     return jsonify({'message': 'Job deleted successfully'}), 200
 
 
-# ✅ Properly indented and placed outside of delete_job
 @jobs_bp.route('/jobs/<int:job_id>', methods=['GET'])
 def get_job_by_id(job_id):
     job = Job.query.get(job_id)
@@ -69,6 +71,7 @@ def get_job_by_id(job_id):
         'id': job.id,
         'company_name': job.company_name,
         'email': job.email,
+        'apply_link':job.apply_link,
         'city': job.city,
         'country': job.country,
         'address': job.address,
